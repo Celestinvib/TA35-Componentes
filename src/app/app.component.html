@@ -23,20 +23,20 @@ crossorigin="anonymous"></script>
     <br>
     <div class="row">
     <h2>Alta cliente</h2>
-    <form method="post" action="saveClient()">
-      <label for="name" class="me-2">Nombre:</label>
-      <input id="name" type="text" name="name" [(ngModel)]="name"><br><br>
-      <label for="cif" class="me-2">CIF: </label>
-      <input id="cif" type="text" name="cif" [(ngModel)]="cif"><br><br>
-      <label for="address" class="me-2">Dirección:</label>
-      <input id="address" type="text" name="address" [(ngModel)]="address"><br><br>
-      <label for="group" class="me-2">Grupo:</label>
-      <select name="group" [(ngModel)]="group">
-        <option value="1">1</option>
-        <option value="2">2</option>
-      </select><br><br>
-      <input type="submit" value="Guardar">
-    </form>
+    <div>
+        <label for="name" class="me-2">Nombre:</label>
+        <input id="name" type="text" name="name" [(ngModel)]="name"><br><br>
+        <label for="cif" class="me-2">CIF: </label>
+        <input id="cif" type="text" name="cif" [(ngModel)]="cif"><br><br>
+        <label for="address" class="me-2">Dirección:</label>
+        <input id="address" type="text" name="address" [(ngModel)]="address"><br><br>
+        <label for="group" class="me-2">Grupo:</label>
+        <select name="group" [(ngModel)]="group">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select><br><br>
+        <input type="button" value="Enviar" (click)="saveClient()">
+    </div>
     </div>
     <br>
     <app-list [clients]="clients"></app-list>

@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
   name:string = "";
 
   cif:string = "";
@@ -24,11 +23,12 @@ export class AppComponent {
 
     if(this.name != "" && this.cif != "" && this.address != "") {
       this.clients.push([this.name,this.cif,this.address,this.group]);
+      this.name = "";
+      this.cif = "";
+      this.address = "";
+      this.group = "1";
     }
-    this.name = "";
-    this.cif = "";
-    this.address = "";
-    this.group = "1";
+
 
 
   }
