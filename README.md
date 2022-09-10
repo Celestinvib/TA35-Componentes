@@ -1,7 +1,7 @@
 # TA35-Componentes
 ### Description:
 ```
-Angular applications on a basic (ex1) and advanced (ex2) form in which the data sent dynamically is displayed, in the projects there are two components, one parent and one child (list).
+Angular applications on a basic (ex1) and advanced (ex2) form, in which the data sent is dynamically displayed, in the projects there are two components, one parent and one child (list).
 ```
 ### Screenshots of the projects running :
 ![image](https://user-images.githubusercontent.com/55434881/189492496-fbe80e1f-bc2b-4626-8709-aef18730599f.png)
